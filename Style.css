@@ -1,0 +1,70 @@
+body{
+	background-color: lightblue;
+	padding: 1em;
+	font-family: sans-serif;
+	color: black;
+}
+
+.menu{
+	position: fixed;
+	right: 0;
+	top: 30%;
+	width: 10em;
+	border: 2px solid green;
+	background-color: rgba(145,242,119,0.6);
+	font-size: 1em;
+}
+
+@media (max-width: 480px) {
+	.menu{
+		width: 8em;
+		font-size: 0.5em;
+	}
+}
+
+nav{
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+nav ul{
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+
+
+nav:hover ul{
+	display: block;
+}	
+nav ul li{
+	background-color: inherit;
+	border-top: 2px solid green;
+	color: black;
+	margin: 0;
+	padding: 0.5em;
+}
+
+nav ul li:hover{
+	border-right: 5px dotted limegreen;
+	background-color: rgba(145,242,119,0.8);
+}
+
+nav a{
+	text-decoration: none;
+	color: green;
+}
+
+nav a:hover{
+	color: white;
+}
+
+.shit_article{
+	position: absolute;
+	text-align: left;
+	width: 75%;
+	padding-bottom: 5em;
+}
